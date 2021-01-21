@@ -1,0 +1,36 @@
+import pyautogui
+import sys
+from tkinter import Tk, Label, Button
+
+
+
+
+class Main:
+    def __init__(self, master):
+        self.root = root
+        self.root.title("Joachim")
+        self.root.geometry("1920x1080")
+        self.label = Label(master, text="Joachim lære Tkinter")
+        self.label.pack()
+        self.knap_button = Button(master, text="Hej", command=self.knap)
+        self.knap_button.pack()
+        self.root.resizable(width=True, height=True)
+        self.close_button = Button(master, text="Close", command=master.quit)
+        self.close_button.pack()
+
+    def knap(self):
+        print("Hej med dig!!")
+
+
+
+
+if __name__ == '__main__':
+    root = Tk()
+    obj = Main(root)
+    root.mainloop()
+
+#Opgave 1. Du skal navngive vinduet der åbner noget andet end hvad jeg har kaldt den.
+#Opgave 2. Du skal ændre størrelsen på vinduet.
+#Opgave 3. Du skal gøre sådan så at vinduet der åbner ikke kan laves anden størelse en den som du har givet den.
+#Opgave 4. Du skal lave knappen som hedder "Hej" Om til at skrive noget andet end "Hej med dig!!"
+#opgave 5. Du skal lave din egen knap som gør noget valgfrit. det må gerne være det samme som jeg har lavet.
